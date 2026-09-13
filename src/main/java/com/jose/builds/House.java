@@ -21,4 +21,36 @@ public class House {
     this.hasSwimmingPool = hasSwimmingPool;
     this.statuesCount = statuesCount;
   }
+
+  public int getWalls() {
+    return walls;
+  }
+
+  public int getDoors() {
+    return doors;
+  }
+
+  public int getWindows() {
+    return windows;
+  }
+
+  public boolean hasRoof() {
+    return hasRoof;
+  }
+
+  public boolean hasGarage() {
+    return hasGarage;
+  }
+
+  public boolean hasGarden() {
+    return hasGarden;
+  }
+
+  public boolean hasSwimmingPool() {
+    return hasSwimmingPool;
+  }
+
+  public int getStatuesCount() {
+    return statuesCount;
+  }
 }
