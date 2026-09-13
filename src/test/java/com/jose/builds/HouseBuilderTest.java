@@ -58,4 +58,10 @@ public class HouseBuilderTest {
     assertFalse(house.hasSwimmingPool());
     assertEquals(4, house.getStatuesCount());
   }
+
+  @Test
+  void testToStringOutput() {
+    House house = builder.setWalls(4).build();
+    assertTrue(house.toString().contains("walls=4"));
+  }
 }
