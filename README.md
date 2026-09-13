@@ -83,3 +83,63 @@ Perfecto, Giacomo. Aquí tienes los **criterios de evaluación** añadidos al ej
 
 ## Source
 - https://refactoring.guru/es/design-patterns/builder
+
+
+# Diagramas:
+
+classDiagram
+    class House {
+        -int walls
+        -int doors
+        -int windows
+        -boolean hasRoof
+        -boolean hasGarage
+        -boolean hasGarden
+        -boolean hasSwimmingPool
+        -int statuesCount
+        +getWalls() int
+        +getDoors() int
+        +getWindows() int
+        +hasRoof() boolean
+        +hasGarage() boolean
+        +hasGarden() boolean
+        +hasSwimmingPool() boolean
+        +getStatuesCount() int
+    }
+
+    class HouseBuilder {
+        <>
+        +setWalls(int) HouseBuilder
+        +setDoors(int) HouseBuilder
+        +setWindows(int) HouseBuilder
+        +setRoof(boolean) HouseBuilder
+        +setGarage(boolean) HouseBuilder
+        +setGarden(boolean) HouseBuilder
+        +setSwimmingPool(boolean) HouseBuilder
+        +setStatuesCount(int) HouseBuilder
+        +reset() void
+        +build() House
+    }
+
+    class ConcreteHouseBuilder {
+        -int walls
+        -int doors
+        -int windows
+        -boolean hasRoof
+        -boolean hasGarage
+        -boolean hasGarden
+        -boolean hasSwimmingPool
+        -int statuesCount
+        +build() House
+        +reset() void
+    }
+
+    class CivilEngineer {
+        -HouseBuilder builder
+        +constructSimpleHouse() House
+        +constructLuxuryHouse() House
+    }
+
+    HouseBuilder <|.. ConcreteHouseBuilder
+    ConcreteHouseBuilder ..> House : creates
+    CivilEngineer o-- HouseBuilder
