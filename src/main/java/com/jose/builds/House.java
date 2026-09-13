@@ -53,4 +53,18 @@ public class House {
   public int getStatuesCount() {
     return statuesCount;
   }
+
+  @Override
+  public String toString() {
+    return "House {" +
+        "walls=" + walls +
+        ", doors=" + doors +
+        ", windows=" + windows +
+        ", hasRoof=" + hasRoof +
+        ", hasGarage=" + hasGarage +
+        ", hasGarden=" + hasGarden +
+        ", hasSwimmingPool=" + hasSwimmingPool +
+        ", statuesCount=" + statuesCount +
+        '}';
+  }
 }
