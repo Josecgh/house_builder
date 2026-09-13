@@ -10,6 +10,10 @@ public class ConcreteHouseBuilder implements HouseBuilder {
   private boolean hasSwimmingPool;
   private int statuesCount;
 
+  public ConcreteHouseBuilder() {
+    this.reset();
+  }
+
   @Override
   public HouseBuilder setWalls(int walls) {
     this.walls = walls;
