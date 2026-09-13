@@ -86,7 +86,7 @@ Perfecto, Giacomo. Aquí tienes los **criterios de evaluación** añadidos al ej
 
 
 # Diagramas:
-
+```mermaid
 classDiagram
     class House {
         -int walls
@@ -143,3 +143,4 @@ classDiagram
     HouseBuilder <|.. ConcreteHouseBuilder
     ConcreteHouseBuilder ..> House : creates
     CivilEngineer o-- HouseBuilder
+```
