@@ -7,5 +7,8 @@ public class CivilEngineer {
     this.builder = builder;
   }
 
-  
+  public House constructSimpleHouse() {
+    return builder.setWalls(4).setDoors(1)
+            .setDoors(2).setRoof(true).build();
+  }
 }
