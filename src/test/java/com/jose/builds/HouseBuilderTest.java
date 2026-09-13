@@ -43,4 +43,19 @@ public class HouseBuilderTest {
     assertTrue(house.hasRoof());
     assertFalse(house.hasSwimmingPool());
   }
+
+  @Test
+  void testDirectorConstructLuxuryHouse() {
+    CivilEngineer engineer = new CivilEngineer(builder);
+    House house = engineer.constructLuxuryHouse();
+
+    assertEquals(8, house.getWalls());
+    assertEquals(4, house.getDoors());
+    assertEquals(18, house.getWindows());
+    assertTrue(house.hasRoof());
+    assertTrue(house.hasGarage());
+    assertTrue(house.hasGarden());
+    assertFalse(house.hasSwimmingPool());
+    assertEquals(4, house.getStatuesCount());
+  }
 }
