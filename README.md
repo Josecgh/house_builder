@@ -84,8 +84,9 @@ Perfecto, Giacomo. Aquí tienes los **criterios de evaluación** añadidos al ej
 ## Source
 - https://refactoring.guru/es/design-patterns/builder
 
+![Separador Animado](https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=header)
 
-# Diagramas:
+# Diagrama de clases:
 ```mermaid
 classDiagram
     class House {
