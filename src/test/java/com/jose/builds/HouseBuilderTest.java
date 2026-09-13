@@ -32,4 +32,15 @@ public class HouseBuilderTest {
     assertFalse(house.hasSwimmingPool());
     assertEquals(0, house.getStatuesCount());
   }
+
+  @Test
+  void testDirectorConstructSimpleHouse() {
+    CivilEngineer engineer = new CivilEngineer(builder);
+    House house = engineer.constructSimpleHouse();
+
+    assertEquals(4, house.getWalls());
+    assertEquals(2, house.getDoors());
+    assertTrue(house.hasRoof());
+    assertFalse(house.hasSwimmingPool());
+  }
 }
