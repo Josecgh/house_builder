@@ -84,6 +84,7 @@ Perfecto, Giacomo. Aquí tienes los **criterios de evaluación** añadidos al ej
 ## Source
 - https://refactoring.guru/es/design-patterns/builder
 
+
 ![Separador Animado](https://capsule-render.vercel.app/api?type=waving&color=auto&height=100&section=header)
 
 # Diagrama de clases:
@@ -145,3 +146,6 @@ classDiagram
     ConcreteHouseBuilder ..> House : creates
     CivilEngineer o-- HouseBuilder
 ```
+
+# Coverage test:
+<img width="283" height="373" alt="image" src="https://github.com/user-attachments/assets/0442da7f-756a-4e9d-aa91-872b96bcc3cc" />
